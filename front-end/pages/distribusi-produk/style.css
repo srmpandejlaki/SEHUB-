@@ -1,0 +1,57 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #1a4d1a, #4d774d, #9cada0);
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+header {
+    display: flex;
+    padding: 0 2rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+main {
+    padding: 0 2rem;
+}
+
+.task-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* didalam .page */
+.icon {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+/**/
+
+.nav-tgl, .navigation {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.nav-tgl {
+    font-weight: bold;
+    font-size: 1rem;
+}
