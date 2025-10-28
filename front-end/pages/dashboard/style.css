@@ -7,24 +7,31 @@ body {
     background-size: cover; */
     font-family: "Poppins", sans-serif;
     color: white;
+    display: grid;
 }
 
 header {
-    padding: 0 2rem;
     height: 50px;
     display: flex;
+}
+
+.logo-sehub {
+    background-color: #2B2B2B;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo-larbre {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-right: 2rem;
 }
 
 main {
-    padding: 0 2rem;
     display: flex;
-    flex-direction: column;
     gap: 0.5rem;
 }
 
@@ -33,4 +40,13 @@ main {
     gap: 5rem;
 }
 
-/*  */
+/* side-bar */
+aside {
+    width: 20%;
+    height: 100vh;
+    background-color: #2B2B2B;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
