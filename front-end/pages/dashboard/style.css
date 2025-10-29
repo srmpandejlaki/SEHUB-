@@ -13,12 +13,17 @@ body {
 
     grid-template-areas:
         "sidebar header header"
-        "sidebar main main"
         "sidebar main main";
 }
 
 header {
     grid-area: header;
+}
+aside {
+    grid-area: sidebar;
+}
+main {
+    grid-area: main;
 }
 
 .logo-sehub {
@@ -30,16 +35,17 @@ header {
 }
 
 .logo-larbre {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: #2B2B2B;
     background-color: white;
-    align-items: center;
+    padding-inline: 1rem;
 }
 
 .logo-larbre img {
-    height: 50px;
+    width: 50px;
+    height: auto;
 }
 
 .menu, .nav {
@@ -53,20 +59,33 @@ header {
 }
 
 /* side-bar */
-aside {
-    grid-area: sidebar;
+.aside {
     background-color: #2B2B2B;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
+    justify-content: space-between;
+    height: 100vh;
 }
 
-aside nav {
+.nav {
+    padding-block: 0.8rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav:hover {
+    cursor: pointer;
+}
+
+.aside nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
 .menu p {
@@ -75,17 +94,63 @@ aside nav {
 }
 
 .companies-name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.companies-name p {
+    text-align: center;
     font-size: 0.8rem;
 }
 
 /* main-side */
+.hari-tgl {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-inline: 1rem;
+}
 
-main {
-    grid-area: main;
+.main-section {
+    margin-inline: 1rem;
+    height: 75vh;
+    background-color: white;
+    border-radius: 12px;
+    color: #2B2B2B;
+}
+
+.main-section a {
+    text-decoration: none;
+    color: #118800;
+    font-weight: bolder;
+}
+
+/* tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+td {
+    color: white;
+}
+
+thead {
+    border-bottom: #118800 2px solid;
+}
+
+tbody {
+    border: white 2px solid;
+}
+
+/* Baris ganjil */
+tbody tr:nth-child(odd) {
+  background-color: #343434; /* misal abu gelap */
+}
+
+/* Baris genap */
+tbody tr:nth-child(even) {
+  background-color: #2B2B2B; /* sedikit lebih gelap */
 }
