@@ -50,7 +50,7 @@ main {
 
 .menu, .nav {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -74,6 +74,7 @@ main {
 .nav a {
     text-decoration: none;
     color: white;
+    font-weight: bolder;
 }
 
 .nav:hover {
