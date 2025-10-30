@@ -136,7 +136,7 @@ main {
 }
 
 /* form */
-input {
+input, select {
     width: 250px;
     height: 25px;
     border-radius: 4px;
@@ -144,15 +144,23 @@ input {
     color: white;
 }
 
-.inputan p {
+.inputan {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.inputan label {
     padding-inline: 1rem;
 }
 
 form {
     grid-area: form;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .img-product {

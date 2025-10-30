@@ -58,32 +58,44 @@
                 <h3>Form Tambah Data Distribusi</h3>
                 <form>
                     <div class="inputan">
-                        <p>Hari/Tanggal</p>
+                        <label for="hari-tgl">Hari/Tanggal</label>
                         <input type="date" placeholder="Hari/Tanggal">
                     </div>
                     <div class="inputan">
-                        <p>Nama Pemesan</p>
+                        <label for="nama-pemesan">Nama Pemesan</label>
                         <input type="text" placeholder="Nama Pemesan">
                     </div>
                     <div class="inputan">
-                        <p>Jenis Produk</p>
-                        <input type="checkbox" placeholder="Jenis Produk">
+                        <label for="jenis-produk">Jenis Produk</label>
+                        <select name="Jenis Produk" id="jenis-produk" placeholder="Jenis Produk">
+                            <option value="Seho Sirop">Seho Sirop</option>
+                            <option value="Seho Granule">Seho Granule</option>
+                            <option value="Seho Block">Seho Block</option>
+                        </select>
                     </div>
                     <div class="inputan">
-                        <p>Kuantitas</p>
+                        <label for="kuantitas">Kuantitas</label>
                         <input type="text" placeholder="Kuantitas">
                     </div>
                     <div class="inputan">
-                        <p>Metode Pengiriman</p>
-                        <input type="radio" placeholder="Metode Pengiriman">
+                        <label for="metode-pengiriman">Metode Pengiriman</label>
+                        <select name="Jenis Produk" id="metode-pengiriman" placeholder="Metode Pengiriman">
+                            <option value="Seho Sirop">Pengantaran Langsung</option>
+                            <option value="Seho Granule">Jasa Kurir</option>
+                            <option value="Seho Block">Ambil Di tempat</option>
+                        </select>
                     </div>
                     <div class="inputan">
-                        <p>Keterangan</p>
+                        <label for="keterangan">Keterangan</label>
                         <input type="text" placeholder="Keterangan">
                     </div>
                     <div class="inputan">
-                        <p>Status</p>
-                        <input type="radio" placeholder="Status">
+                        <label for="status">Status</label>
+                        <select name="Jenis Produk" id="status" placeholder="Status">
+                            <option value="Seho Sirop">Pengemasan</option>
+                            <option value="Seho Granule">Sedang Dikirim</option>
+                            <option value="Seho Block">Sudah Diterima</option>
+                        </select>
                     </div>
                 </form>
                 <div class="img-product"></div>
