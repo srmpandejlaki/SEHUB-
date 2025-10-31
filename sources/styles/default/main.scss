@@ -1,0 +1,143 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #118800;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr;
+
+    grid-template-areas:
+        "sidebar header header"
+        "sidebar main main";
+}
+
+header {
+    grid-area: header;
+}
+aside {
+    grid-area: sidebar;
+}
+main {
+    grid-area: main;
+}
+
+.logo-sehub {
+    background-color: #2B2B2B;
+}
+
+.logo-sehub img {
+    width: 100%;
+}
+
+.logo-larbre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2B2B2B;
+    background-color: white;
+    padding-inline: 1rem;
+}
+
+.logo-larbre img {
+    width: 50px;
+    height: auto;
+}
+
+.menu, .nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.menu img, .nav img {
+    width: 20px;
+}
+
+/* side-bar */
+.aside {
+    background-color: #2B2B2B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.nav {
+    padding-block: 0.8rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.nav:hover {
+    cursor: pointer;
+}
+
+.aside nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.companies-name {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/* main-side */
+.hari-tgl {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-inline: 1rem;
+}
+
+.main-section {
+    margin-inline: 1rem;
+    height: 75vh;
+    background-color: white;
+    border-radius: 12px;
+    color: #2B2B2B;
+}
+
+// main-section form
+.main-section-form {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  grid-template-rows: 50px;
+
+  grid-template-areas:
+    "title title title"
+    "form form img-product";
+}
+
+.main-section a {
+    text-decoration: none;
+    color: #118800;
+    font-weight: bolder;
+}
+
+.main-section h3 {
+    grid-area: title;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.img-product {
+    grid-area: img-product;
+}

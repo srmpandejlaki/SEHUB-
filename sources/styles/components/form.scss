@@ -1,0 +1,27 @@
+/* form */
+input, select {
+    width: 250px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: #2B2B2B;
+    color: white;
+}
+
+.inputan {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+    label {
+        padding-inline: 1rem;
+    }
+}
+
+form {
+    grid-area: form;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
