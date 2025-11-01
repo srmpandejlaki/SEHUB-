@@ -30,9 +30,9 @@ class App extends React.Component {
   render() {
     return (
       <LocaleProvider value={this.state.localeContext}>
-        <Header />
-        <AsideBar />
-        <main>
+        <main className="main-side">
+          <Header />
+          <AsideBar />
           <Routes>
             <Route path="/" element={<DashboardPage />} />
           </Routes>

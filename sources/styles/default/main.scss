@@ -5,6 +5,9 @@ body {
     background-color: #118800;
     font-family: "Poppins", sans-serif;
     color: white;
+}
+
+.main-side {
     width: 100%;
     height: 100vh;
     display: grid;
@@ -22,16 +25,16 @@ header {
 aside {
     grid-area: sidebar;
 }
-main {
+.content {
     grid-area: main;
 }
 
 .logo-sehub {
     background-color: #2B2B2B;
-}
-
-.logo-sehub img {
-    width: 100%;
+    
+    img {
+        width: 100%;
+    }
 }
 
 .logo-larbre {
@@ -41,17 +44,22 @@ main {
     color: #2B2B2B;
     background-color: white;
     padding-inline: 1rem;
+    
+    img {
+        width: 50px;
+        height: auto;
+    }
 }
 
-.logo-larbre img {
-    width: 50px;
-    height: auto;
-}
-
-.menu, .nav {
+.menu {
     display: flex;
-    gap: 1rem;
     align-items: center;
+    gap: 1rem;
+
+    p {
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
 }
 
 .menu img, .nav img {
@@ -67,31 +75,23 @@ main {
     height: 100vh;
 }
 
-.nav {
-    padding-block: 0.8rem;
-}
-
-.nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-}
-
-.nav:hover {
-    cursor: pointer;
-}
-
-.aside nav {
+.navigation {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 8rem;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+    }
 }
 
-.menu p {
-    font-size: 1.5rem;
-    font-weight: bolder;
+.nav-item {
+    display: flex;
+    gap: 1.5rem;
+    padding-block: 0.5rem;
 }
 
 .companies-name {
@@ -105,9 +105,11 @@ main {
     justify-content: end;
     align-items: center;
     padding-inline: 1rem;
+    font-weight: bolder;
 }
 
-.main-section {
+.content {
+    margin-top: 3rem;
     margin-inline: 1rem;
     height: 75vh;
     background-color: white;
@@ -115,29 +117,7 @@ main {
     color: #2B2B2B;
 }
 
-// main-section form
-.main-section-form {
-  display: grid;
-  grid-template-columns: 100px 1fr 1fr;
-  grid-template-rows: 50px;
-
-  grid-template-areas:
-    "title title title"
-    "form form img-product";
-}
-
-.main-section a {
-    text-decoration: none;
-    color: #118800;
-    font-weight: bolder;
-}
-
-.main-section h3 {
-    grid-area: title;
-    text-align: center;
-    font-weight: bolder;
-}
-
+// gambar di form
 .img-product {
     grid-area: img-product;
 }
