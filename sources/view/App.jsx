@@ -1,5 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import Header from '../components/main/headerBar';
+import AsideBar from '../components/main/asideBar';
+import DashboardPage from '../view/pages/dashboard';
+
+import LocaleContext, { LocaleProvider } from '../contexts/localContext';
 
 class App extends React.Component {
   constructor(props) {
@@ -24,11 +29,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <Routes>
-          <Route path="/" element={<h1>Dashboard</h1>} />
-        </Routes>
-      </div>
+      <LocaleProvider value={this.state.localeContext}>
+        <Header />
+        <AsideBar />
+        <main>
+          <Routes>
+            <Route path="/" element={<DashboardPage />} />
+          </Routes>
+        </main>
+      </LocaleProvider>
     );
   }
 }

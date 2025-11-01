@@ -8,20 +8,19 @@ function AsideBar() {
         <img src="../../assets/public/sehub.png" alt="Logo SEHUB+" />
       </div>
       <div className="navigation">
-        <div class="menu">
+        <div className="menu">
             <img src="../../assets/icon/menu-g.png" alt="" />
             <p>MENU</p>
         </div>
         <ul>
           <li>
-            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/">Beranda</Link>
           </li>
           <li>
-            <Link to="/distribusi-produk">Distribusi Produk</Link>
           </li>
         </ul>
       </div>
-      <div class="companies-name">
+      <div className="companies-name">
           <p>PT. Rumah Seho Nusantara</p>
       </div>
     </div>
