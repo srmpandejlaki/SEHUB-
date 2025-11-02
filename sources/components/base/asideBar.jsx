@@ -29,7 +29,7 @@ function AsideBar() {
           </div>
           <div className="nav-item">
             <img src={iconHistory} alt="" /> 
-            <Link>Riwayat</Link>
+            <Link to="/history-data">Riwayat</Link>
           </div>
           <div className="nav-item">
             <img src={iconSetting} alt="" /> 
