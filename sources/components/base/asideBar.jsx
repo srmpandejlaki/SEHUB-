@@ -33,7 +33,7 @@ function AsideBar() {
           </div>
           <div className="nav-item">
             <img src={iconSetting} alt="" /> 
-            <Link>Pengaturan</Link>
+            <Link to="/setting">Pengaturan</Link>
           </div>
         </div>
       </div>

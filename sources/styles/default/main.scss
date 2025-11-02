@@ -142,6 +142,29 @@ h3 {
     }
 }
 
+// base-setting
+.setting {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "product-display other-setting";
+
+    h4 {
+        font-weight: bolder;
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+
+    h5 {
+        margin: 0;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
 // gambar di form
 .img-product {
     grid-area: img-product;
