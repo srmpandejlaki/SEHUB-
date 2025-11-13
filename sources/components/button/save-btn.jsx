@@ -2,8 +2,8 @@ import React from "react";
 
 function SaveBtn() {
   return (
-    <div className="base-btn black">
-      <P>simpan</P>
+    <div>
+      <p className="base-btn black">simpan</p>
     </div>
   );
 }

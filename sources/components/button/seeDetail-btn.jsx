@@ -2,8 +2,8 @@ import React from "react";
 
 function SeeDetailBtn() {
   return (
-    <div className="base-btn black">
-      <P>lihat detail</P>
+    <div>
+      <p className="base-btn black">lihat detail</p>
     </div>
   );
 }

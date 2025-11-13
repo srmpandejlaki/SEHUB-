@@ -2,7 +2,7 @@ import React from "react";
 
 function DeleteBtn() {
   return (
-    <div className="">
+    <div>
       <button className="base-btn red">hapus</button>
     </div>
   );

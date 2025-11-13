@@ -22,7 +22,8 @@ tbody td {
 
 // tabel dashboard
 .table-dashboard {
-    border-radius: 12px 12px 0 0;
+    width: 100%;
+    border-radius: 12px;
     max-height: 300px;
     overflow-y: auto;
     border: 1px solid #ddd;

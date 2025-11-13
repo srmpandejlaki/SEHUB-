@@ -2,7 +2,7 @@ import React from "react";
 
 function BackBtn() {
   return (
-    <div className="">
+    <div>
       <button className="base-btn black">kembali</button>
     </div>
   );

@@ -1,4 +1,5 @@
 .dashboard {
+  gap: 1rem;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr;
@@ -10,12 +11,13 @@
 
 .table {
   grid-area: dashboard-table;
-  padding: 1rem;
 }
 
 .notification-side {
   grid-area: notification-side;
   padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .short-panel {
