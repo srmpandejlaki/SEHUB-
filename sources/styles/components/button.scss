@@ -5,11 +5,14 @@
   border-radius: 0.5rem;
   padding: 0.5rem 1.3rem;
   border: none;
+  background-color: custom.$color-primary;
   color: custom.$color-primary;
   font-weight: bold;
 
-  :hover {
+  &:hover {
     cursor: pointer;
+    color: custom.$color-primary;
+    transition: all 0.2s ease-in-out;
   } 
 }
 
