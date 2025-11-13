@@ -1,10 +1,12 @@
+@use '../default/custom.scss';
+
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: custom.$color-primary;
     font-family: "Poppins", sans-serif;
-    color: #2B2B2B;
+    color: custom.$color-secondary;
 }
 
 .main-side {
@@ -34,7 +36,7 @@ header {
 }
 
 .logo-sehub {
-    background-color: #2B2B2B;
+    background-color: custom.$color-secondary;
     
     img {
         width: 100%;
@@ -42,30 +44,27 @@ header {
 }
 
 .logo-larbre {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    background-color: #118800;
+    @include custom.flex-between;
+    color: custom.$color-primary;
+    background-color: custom.$color-tertiary;
     padding-inline: 1rem;
     
     img {
         width: 50px;
         height: auto;
-        background-color: white;
+        background-color: custom.$color-primary;
         border-radius: 4px;
     }
 }
 
 .menu {
-    display: flex;
-    align-items: center;
+    @include custom.flex-align-center;
     gap: 1rem;
 
     p {
         font-size: 1.5rem;
         font-weight: bolder;
-        color: white;
+        color: custom.$color-primary;
     }
 }
 
@@ -80,7 +79,7 @@ header {
 
 /* side-bar */
 .aside {
-    background-color: #2B2B2B;
+    background-color: custom.$color-secondary;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,9 +87,7 @@ header {
 }
 
 .navigation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include custom.flex-column;
     gap: 8rem;
 
     ul {
@@ -100,65 +97,37 @@ header {
 
     li {
         list-style: none;
-        display: flex;
-        align-items: center;
+        @include custom.flex-align-center;
         gap: 1rem;
         padding-block: 0.5rem;
     }
 
     a {
         text-decoration: none;
-        color: white;
         font-weight: bolder;
+        color: custom.$color-primary;
     }
 }
 
 .companies-name {
+    color: custom.$color-primary;
     text-align: center;
     font-size: 0.8rem;
 }
 
 /* main-side */
 .hari-tgl {
-    display: flex;
+    @include custom.flex-align-center;
     justify-content: end;
-    align-items: center;
     padding-inline: 1rem;
     font-weight: bolder;
 }
 
 .content {
-    margin-top: 3rem;
-    margin-inline: 1rem;
-    height: 75vh;
-    background-color: white;
+    margin: 1rem;
     border-radius: 12px;
-    color: #2B2B2B;
-}
-
-// option form
-h3 {
-    text-align: center;
-    padding-block: 1rem;
-    font-size: 1.5rem;
-}
-
-.option {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1rem;
-
-    img {
-        width: 300px;
-        height: auto;
-
-        &:hover {
-            cursor: pointer;
-            transform: scale(1.05);
-            transition: all 0.3s ease-in-out;
-        }
-    }
+    background-color: custom.$color-primary;
+    color: custom.$color-secondary;
 }
 
 // base-setting
@@ -184,7 +153,3 @@ h3 {
     }
 }
 
-// gambar di form
-.img-product {
-    grid-area: img-product;
-}

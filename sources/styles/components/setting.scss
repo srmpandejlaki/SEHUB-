@@ -1,3 +1,5 @@
+@use '../default/custom.scss';
+
 .product-display {
   grid-area: product-display;
   padding: 0 1rem 1rem 1rem;
@@ -8,7 +10,7 @@
 
 .other-setting {
   grid-area: other-setting;
-  border-left: 2px solid #118800;
+  border-left: 2px solid custom.$color-tertiary;
   padding-left: 1rem;
 }
 
@@ -29,15 +31,11 @@
 }
 
 .language {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include custom.flex-column;
 }
 
 .btn-setting {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include custom.flex-between;
   padding-right: 1rem;
 
   p {

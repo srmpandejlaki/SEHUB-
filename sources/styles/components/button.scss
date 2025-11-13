@@ -1,11 +1,11 @@
+@use '../default/custom.scss';
+
 .base-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include custom.flex-center;
   border-radius: 0.5rem;
   padding: 0.5rem 1.3rem;
   border: none;
-  color: white;
+  color: custom.$color-primary;
   font-weight: bold;
 
   :hover {
@@ -14,23 +14,33 @@
 }
 
 .button-side {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include custom.flex-between;
 }
 
 .black {
-  background-color: #2B2B2B;
+  background-color: custom.$color-secondary;
 }
 
 .yellow {
-  background-color: #EFAC00;
+  color: custom.$warning;
+
+  &:hover {
+    background-color: custom.$warning;
+  }
 }
 
 .green {
-  background-color: #118800;
+  color: custom.$color-tertiary;
+
+  &:hover {
+    background-color: custom.$color-tertiary;
+  }
 }
 
 .red {
-  background-color: #D20000;
+  color: custom.$danger;
+
+  &:hover {
+    background-color: custom.$danger;
+  }
 }

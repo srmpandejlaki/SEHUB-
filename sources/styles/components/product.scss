@@ -1,7 +1,8 @@
+@use '../default/custom.scss';
+
 .product-items {
-  display: flex;
+  @include custom.flex-align-center;
   gap: 1rem;
-  text-align: center;
 }
 
 .product {

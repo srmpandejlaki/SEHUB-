@@ -1,12 +1,21 @@
+@use '../default/custom.scss';
+
 .dashboard {
   gap: 1rem;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas:
+    "opening opening"
     "short-panel notification-side"
-    "dashboard-table notification-side"
     "dashboard-table notification-side";
+}
+
+.opening {
+  grid-area: opening;
+  @include custom.flex-space-between;
+  padding: 0;
+  margin: 0;
 }
 
 .table {
@@ -22,8 +31,7 @@
 
 .short-panel {
   grid-area: short-panel;
-  display: flex;
-  justify-content: space-between;
+  @include custom.flex-space-between;
   padding-bottom: 1.5rem;
 }
 

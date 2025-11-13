@@ -1,10 +1,12 @@
+@use '../default/custom.scss';
+
 /* form */
 input, select {
     width: 250px;
     height: 25px;
     border-radius: 4px;
-    background-color: #2B2B2B;
-    color: white;
+    background-color: custom.$color-secondary;
+    color: custom.$color-primary;
 }
 
 .inputan {
@@ -14,36 +16,5 @@ input, select {
     
     label {
         padding-inline: 1rem;
-    }
-}
-
-form {
-    grid-area: form;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.main-section-form {
-    display: grid;
-    grid-template-columns: 100px 1fr 1fr;
-    grid-template-rows: 50px;
-
-    grid-template-areas:
-        "title title title"
-        "form form img-product";
-
-    a {
-        text-decoration: none;
-        color: #118800;
-        font-weight: bolder;
-    }
-    
-    h3 {
-        grid-area: title;
-        text-align: center;
-        font-weight: bolder;
     }
 }

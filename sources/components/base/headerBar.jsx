@@ -8,9 +8,6 @@ function Header() {
         <h2>Aplikasi Pendataan Inventori dan Distribusi Produk L' Arbre Seho</h2>
         <img src={logoLarbre} alt="Logo L'Arbre Seho" />
       </div>
-      <div className="hari-tgl">
-          <p>20 September 2025</p>
-      </div>
     </header>
   );
 }

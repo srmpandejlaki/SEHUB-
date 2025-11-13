@@ -1,0 +1,36 @@
+/* font color */
+$color-primary: #FFFFFF;
+$color-secondary: #2B2B2B;
+$color-tertiary: #118800;
+$code-product: #8D8D8D;
+$warning: #EFAC00;
+$danger: #FF6060;
+
+/* mixins */
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
