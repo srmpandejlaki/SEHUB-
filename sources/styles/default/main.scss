@@ -47,7 +47,11 @@ header {
     @include custom.flex-between;
     color: custom.$color-primary;
     background-color: custom.$color-tertiary;
-    padding-inline: 1rem;
+    padding: 0.5rem 1rem;
+
+    h2 {
+        font-size: 1.15rem;
+    }
     
     img {
         width: 50px;

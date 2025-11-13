@@ -8,12 +8,12 @@ function DashboardTable() {
         <table>
           <thead>
               <tr>
-                  <th>No</th>
+                  <th className="center">No</th>
                   <th>Hari/Tanggal</th>
                   <th>Nama Pemesan</th>
                   <th>Produk</th>
-                  <th>Jumlah</th>
-                  <th>Total</th>
+                  <th className="center">Jumlah</th>
+                  <th className="center">Total</th>
                   <th>Nama Pengirim</th>
                   <th></th>
               </tr>
