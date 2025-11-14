@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import logoSehub from "../../assets/public/sehub.png";
-import iconMenu from "../../assets/icon/menu-g.png";
-import iconHome from "../../assets/icon/home-g.png";
-import iconAdd from "../../assets/icon/add-g.png";
-import iconSetting from "../../assets/icon/gear-g.png";
+import IconMenu from "../../assets/icon/Vector-5.svg?react";
+import IconHome from "../../assets/icon/Vector-4.svg?react";
+import IconProduct from "../../assets/icon/Vector-7.svg?react";
+import IconSetting from "../../assets/icon/Vector-6.svg?react";
 
 function AsideBar() {
   return (
@@ -15,20 +15,20 @@ function AsideBar() {
         </div>
         <div className="nav">
           <div className="menu">
-              <img src={iconMenu} alt="" /> 
+              <IconMenu className="icon" /> 
               <p>MENU</p>
           </div>
           <ul>
             <li>
-              <img src={iconHome} alt="" />
+              <IconHome className="icon" /> 
               <Link to="/">Beranda</Link>
             </li>
             <li>
-              <img src={iconAdd} alt="" />
+              <IconProduct className="icon" /> 
               <Link to="/product">Produk</Link>
             </li>
             <li>
-              <img src={iconSetting} alt="" />
+              <IconSetting className="icon" /> 
               <Link to="/setting">Pengaturan</Link>
             </li>
           </ul>

@@ -1,7 +1,7 @@
 import React from "react";
-import iconIndonesia from "../../assets/icon/indonesia.png";
-import iconEnglish from "../../assets/icon/english.png";
-import iconFrance from "../../assets/icon/france.png";
+import IconIndonesia from "../../assets/icon/indonesia.png";
+import IconEnglish from "../../assets/icon/inggris.png";
+import IconFrance from "../../assets/icon/france.png";
 
 
 function LanguageSetting() {
@@ -13,15 +13,15 @@ function LanguageSetting() {
       </div>
       <div className="icon-languages">
         <div className="language">
-          <img src={iconIndonesia} alt="" />
+          <img src={IconIndonesia} alt="" />
           <p>Indonesia</p>
         </div>
         <div className="language">
-          <img src={iconEnglish} alt="" />
+          <img src={IconEnglish} alt="" />
           <p>English</p>
         </div>
         <div className="language">
-          <img src={iconFrance} alt="" />
+          <img src={IconFrance} alt="" />
           <p>France</p>
         </div>
       </div>
