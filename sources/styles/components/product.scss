@@ -1,6 +1,12 @@
 @use '../default/custom.scss';
 
 .product-page {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-display {
   height: 70vh;
   background-color: #e4e3e3;
   padding: 0.5rem 1rem;
@@ -8,7 +14,6 @@
 }
 
 .nav-product {
-  margin-bottom: 1rem;
 
   ul {
     display: flex;
@@ -36,6 +41,7 @@
   display: flex;
   justify-content: space-between;
   height: 35px;
+  padding-block: 0.5rem;
 }
 
 .search-filter {
@@ -45,7 +51,8 @@
 
 .product-items {
   @include custom.flex-align-center;
-  gap: 1rem;
+  gap: 1.5rem;
+  padding-block: 0.5rem;
 
   max-width: 100%;
   overflow-x: auto;
@@ -58,7 +65,9 @@
   img {
     margin: 0;
     padding: 0;
-    border-radius: 4px 4px 0 0;
+    border-radius: 8px 8px 0 0;
+
+    width: 180px;
   }
 
   .product-desc {
@@ -68,5 +77,30 @@
       text-align: center;
       font-weight: bolder;
     }
+  }
+}
+
+/* form tambah atau edit produk */ 
+
+.form-product {
+  width: 300px;
+  height: 400px;
+  @include custom.flex-space-between;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  border: custom.$color-secondary 1px solid;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.form-header {
+  @include custom.flex-center;
+  gap: 1rem;
+  padding-block: 0.5rem;
+
+  div {
+    @include custom.flex-center;
+    gap: 0.5rem;
   }
 }
