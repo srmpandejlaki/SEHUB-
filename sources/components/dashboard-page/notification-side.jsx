@@ -6,7 +6,7 @@ function NotificationSide() {
     <div className="notification-side">
       <div className="notif-title">
         <IconReminder className="icon onPanel blackIcon" />
-        <p>Notifikasi</p>
+        <p>Pemberitahuan</p>
       </div>
       <div className="notif-content">
         <p className="redText">Peringatan!</p>

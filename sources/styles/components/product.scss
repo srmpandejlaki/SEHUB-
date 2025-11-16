@@ -1,14 +1,72 @@
 @use '../default/custom.scss';
 
-.product-items {
-  @include custom.flex-align-center;
+.product-page {
+  height: 70vh;
+  background-color: #e4e3e3;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.nav-product {
+  margin-bottom: 1rem;
+
+  ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  li {
+    height: 30px;
+    padding: 0.5rem;
+
+    &:hover {
+      cursor: pointer;
+      color: custom.$color-primary;
+      background-color: custom.$color-secondary;
+      border-radius: 4px;
+
+      .icon {
+        color: custom.$color-tertiary;
+      }
+    }
+  }
+}
+
+.header-product-page {
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+}
+
+.search-filter {
+  display: flex;
   gap: 1rem;
 }
 
-.product {
-  display: flex;
-  flex-direction: column;
+.product-items {
+  @include custom.flex-align-center;
   gap: 1rem;
-  padding: 1rem;
+
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.product {
   border-radius: 8px;
+  background-color: custom.$color-primary;
+
+  img {
+    margin: 0;
+    padding: 0;
+    border-radius: 4px 4px 0 0;
+  }
+
+  .product-desc {
+    padding: 0.5rem 1rem;
+
+    p {
+      text-align: center;
+      font-weight: bolder;
+    }
+  }
 }
