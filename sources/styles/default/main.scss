@@ -35,14 +35,7 @@ header {
     grid-area: main;
 }
 
-.logo-sehub {
-    background-color: custom.$color-secondary;
-    
-    img {
-        width: 100%;
-    }
-}
-
+/* logo L' Arbre Seho */
 .logo-larbre {
     @include custom.flex-between;
     color: custom.$color-primary;
@@ -61,6 +54,19 @@ header {
     }
 }
 
+.icon {
+    color: custom.$color-tertiary;
+}
+
+/* side-bar */
+.logo-sehub {
+    background-color: custom.$color-secondary;
+    
+    img {
+        width: 100%;
+    }
+}
+
 .menu {
     @include custom.flex-align-center;
     gap: 1rem;
@@ -70,18 +76,12 @@ header {
         font-weight: bolder;
         color: custom.$color-primary;
     }
+
+    img {
+        width: 20px;
+    }
 }
 
-/* img */
-.menu img, .nav img {
-    width: 20px;
-}
-
-.product img {
-    width: 180px;
-}
-
-/* side-bar */
 .aside {
     background-color: custom.$color-secondary;
     display: flex;
@@ -111,6 +111,10 @@ header {
         font-weight: bolder;
         color: custom.$color-primary;
     }
+}
+
+.icon {
+    fill: aqua;
 }
 
 .companies-name {
