@@ -27,6 +27,9 @@
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .short-panel {
@@ -41,10 +44,63 @@
   border-radius: 8px;
   padding: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .text {
   .number {
     font-size: 1.5rem;
+  }
+}
+
+.iconCircle {
+  position: relative; // penting, supaya absolute berada dalam area ini
+  width: 80px;
+  height: 80px;
+  
+  div {
+    width: 100%;
+    height: 100%;
+    background: custom.$dark-green;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1; // lapisan belakang
+  }
+  
+  .onPanel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); // icon di tengah
+    z-index: 2; // di depan
+    width: 50px;
+    height: 50px;
+    color: custom.$color-primary;
+  }
+}
+
+.notif-title {
+  height: 25px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.notif-content {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.3rem;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .redText {
+    font-weight: bold;
+    color: custom.$danger;
   }
 }
