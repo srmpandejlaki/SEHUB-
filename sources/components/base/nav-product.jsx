@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import IconListProduct from "../../assets/icon/ep_list.svg?react";
 import IconInventoryProduct from "../../assets/icon/material-symbols_inventory.svg?react";
 import IconDistribution from "../../assets/icon/lsicon_distribution-filled.svg?react";
@@ -9,11 +10,11 @@ function NavProduct() {
       <ul>
         <li>
           <IconListProduct className="icon" />
-          <p>Produk</p>
+          <Link to="/product" >Produk</Link>
         </li>
         <li>
           <IconInventoryProduct className="icon" />
-          <p>Inventori Produk</p>
+          <Link to="/product/inventory" >Inventori Produk</Link>
         </li>
         <li>
           <IconDistribution className="icon" />
