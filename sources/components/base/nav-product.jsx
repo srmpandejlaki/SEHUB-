@@ -18,7 +18,7 @@ function NavProduct() {
         </li>
         <li>
           <IconDistribution className="icon" />
-          <p>Distribusi Produk</p>
+          <Link to="/product/distribution" >Distribusi Produk</Link>
         </li>
       </ul>
     </div>
