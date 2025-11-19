@@ -27,7 +27,7 @@ thead th {
 }
 
 tbody td {
-    border-bottom: custom.$color-secondary 1px solid;
+    border-top: custom.$color-secondary 1px solid;
     padding-inline: 10px;
 }
 
@@ -39,7 +39,7 @@ tbody td {
     max-height: 150px;
 }
 
-.table-dashboard, .table-user {
+.table-dashboard, .table-user, .table-distribution {
     width: 100%;
     border-radius: 12px;
     overflow-y: auto;

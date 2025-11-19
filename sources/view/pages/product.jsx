@@ -13,7 +13,7 @@ function ProductPage() {
       <div className="main-product">
         <div className="product-display">
           <div className="header-product-page">
-            <p>Daftar Produk L' Arbre Seho</p>
+            <p className="title">Daftar Produk L' Arbre Seho</p>
             <div className="button">
               <div className="base-btn black">
                 <IconAddProduct className="icon" />
