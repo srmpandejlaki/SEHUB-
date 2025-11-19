@@ -11,7 +11,7 @@ function DataDistributionHistory() {
       <NavProduct />
       <div className="main-inventory">
         <div className="inventory-display">
-          <div className="header-inventory">
+          <div className="header-distribution">
             <p>Pratinjau Data Distribusi Produk</p>
             <div className="button">
               <div className="base-btn black">

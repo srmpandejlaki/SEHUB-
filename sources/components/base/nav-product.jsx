@@ -7,20 +7,15 @@ import IconDistribution from "../../assets/icon/lsicon_distribution-filled.svg?r
 function NavProduct() {
   return (
     <div className="nav-product">
-      <ul>
-        <li>
-          <IconListProduct className="icon" />
-          <Link to="/product" >Produk</Link>
-        </li>
-        <li>
-          <IconInventoryProduct className="icon" />
-          <Link to="/product/inventory" >Inventori Produk</Link>
-        </li>
-        <li>
-          <IconDistribution className="icon" />
-          <Link to="/product/distribution" >Distribusi Produk</Link>
-        </li>
-      </ul>
+      <Link to="/product" >
+        <IconListProduct className="icon" />Produk
+      </Link>
+      <Link to="/product/inventory" >
+        <IconInventoryProduct className="icon" />Inventori Produk
+      </Link>
+      <Link to="/product/distribution" >
+        <IconDistribution className="icon" />Distribusi Produk
+      </Link>
     </div>
   );
 }
