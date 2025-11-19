@@ -33,6 +33,27 @@ label {
 
 .form-product, .form-user {
   width: 300px;
+}
+
+.form-data-distribution {
+  width: 500px;
+
+  .main-form {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .double-form {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .inputan {
+    padding-bottom: 1rem;
+  }
+}
+
+.form-product, .form-user, .form-data-distribution {
   background-color: #FAFAFA;
   @include custom.flex-space-between;
   flex-direction: column;
@@ -73,7 +94,7 @@ label {
   }
 }
 
-.double-form {
+.form-product .double-form {
   display: grid;
   grid-template-columns: 150px 1fr;
   gap: 1rem;

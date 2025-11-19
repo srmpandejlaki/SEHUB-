@@ -3,6 +3,7 @@ import NavProduct from "../../../components/base/nav-product";
 import SearchFilter from "../../../components/base/search-filter";
 import NavDistribution from "../../../components/base/nav-distribution";
 import TableDistribution from "../../../components/product-page/table-distribution";
+import FormDataDistribution from "../../../components/product-page/form-data-distribution";
 
 function DistributionHistoryPage() {
   return(
@@ -17,6 +18,9 @@ function DistributionHistoryPage() {
           </div>
         </div>
         <TableDistribution />
+        <div className="form-overlay">
+          <FormDataDistribution /> 
+        </div>
       </div>
     </div>
   );
