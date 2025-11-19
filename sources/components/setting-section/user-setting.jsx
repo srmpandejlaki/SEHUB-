@@ -14,7 +14,7 @@ function UserSetting() {
         <div className="button">
           <div className="base-btn black">
             <IconAddUser className="icon" />
-            <p>tambah produk</p>
+            <p>tambah pengguna</p>
           </div>
         </div>
       </div>
