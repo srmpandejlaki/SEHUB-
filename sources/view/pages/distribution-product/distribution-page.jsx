@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import NavProduct from "../../../components/base/nav-product";
 import SearchFilter from "../../../components/base/search-filter";
 import DistributionProduct from "../../../components/product-page/distribution-items";
@@ -15,8 +16,9 @@ function DistributionPage() {
             <p>Pratinjau Data Distribusi Produk</p>
             <div className="button">
               <div className="base-btn black">
-                <IconHistory className="icon" />
-                <p>Riwayat Tambah Data</p>
+                <Link to="/product/distribution-history" >
+                  <IconHistory className="icon" />Riwayat Tambah Data
+                </Link>
               </div>
             </div>
           </div>

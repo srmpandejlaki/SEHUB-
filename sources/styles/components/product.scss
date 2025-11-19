@@ -1,22 +1,20 @@
 @use '../default/custom.scss';
 
-.product-page {
+.product-page, .distribution-history {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
 .nav-product {
-  display: flex;
-  align-items: center;
+  @include custom.flex-align-center;
   gap: 1rem;
 
   a {
     color: custom.$color-secondary;
     height: 30px;
     padding: 0.5rem;
-    display: flex;
-    align-items: center;
+    @include custom.flex-align-center;
     gap: 0.5rem;
 
     &:hover {
@@ -57,6 +55,13 @@
     .icon {
       width: 20px;
     }
+
+    a {
+      @include custom.flex-align-center;
+      gap: 0.5rem;
+      color: custom.$color-primary;
+      text-decoration: none;
+    }
   }
 }
 
@@ -69,8 +74,7 @@
     border-radius: 16px;
     border: custom.$color-secondary 1px solid;
 
-    display: flex;
-    align-items: center;
+    @include custom.flex-align-center;
     padding-inline: 0.5rem;
   }
 
