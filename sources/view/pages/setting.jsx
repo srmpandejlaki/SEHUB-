@@ -2,16 +2,15 @@ import React from "react";
 import LanguageSetting from "../../components/setting-section/language";
 import ClearDataSetting from "../../components/setting-section/clear-data";
 import IconOtherSetting from "../../assets/icon/Vector-8.svg?react";
+import UserSetting from "../../components/setting-section/user-setting";
 
 function SettingPage() {
   return (
     <div className="content setting">
-      <div className="product-display">
-        <p>PRODUK</p>
-      </div>
+      <UserSetting />
       <div className="other-setting">
         <div className="other-setting-header">
-          <IconOtherSetting className="icon darkGreenIcon" />
+          <IconOtherSetting className="icon greenIcon" />
           <p>Pengaturan Lainnya</p>
         </div>
         <LanguageSetting />

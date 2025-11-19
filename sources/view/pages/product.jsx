@@ -14,9 +14,11 @@ function ProductPage() {
         <div className="product-display">
           <div className="header-product-page">
             <p>Daftar Produk L' Arbre Seho</p>
-            <div className="base-btn black">
-              <IconAddProduct className="icon" />
-              <p>tambah produk</p>
+            <div className="button">
+              <div className="base-btn black">
+                <IconAddProduct className="icon" />
+                <p>tambah produk</p>
+              </div>
             </div>
           </div>
           <SearchFilter />  

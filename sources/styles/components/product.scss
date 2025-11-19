@@ -24,7 +24,7 @@
       color: custom.$color-primary;
       background-color: custom.$color-secondary;
       border-radius: 4px;
-      
+
       .icon {
         color: custom.$color-tertiary;
       }
@@ -32,23 +32,27 @@
   }
 }
 
-.header-product-page, .header-inventory, .header-distribution {
+.header-product-page, .header-inventory, .header-distribution, .header-user-setting {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 35px;
   padding-block: 1rem;
-  font-size: 1rem;
   font-weight: bolder;
 
   .button {
     height: 35px;
     display: flex;
     gap: 1rem;
+    font-size: 0.8rem;
 
     p {
       padding: 0;
       margin: 0;
+    }
+
+    .icon {
+      width: 20px;
     }
   }
 }
