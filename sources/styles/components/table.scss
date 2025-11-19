@@ -32,14 +32,14 @@ tbody td {
 }
 
 // tabel dashboard
-.table-dashboard {
+.table-dashboard, .table-display {
     max-height: 350px;
 }
 .table-user {
     max-height: 150px;
 }
 
-.table-dashboard, .table-user, .table-distribution {
+.table-dashboard, .table-user, .table-display {
     width: 100%;
     border-radius: 12px;
     overflow-y: auto;
@@ -82,12 +82,15 @@ tbody td {
     width: 100px;
 }
 
-// /* Baris ganjil */
-// tbody tr:nth-child(odd) {
-//   background-color: #343434; /* misal abu gelap */
-// }
+.pagination-display, .pagination {
+    @include custom.flex-between();
+}
 
-// /* Baris genap */
-// tbody tr:nth-child(even) {
-//   background-color: #2B2B2B; /* sedikit lebih gelap */
-// }
+.left, .right {
+    @include custom.flex-center();
+    gap: 0.3rem;
+}
+
+.pagination {
+    gap: 1.5rem;
+}

@@ -155,14 +155,14 @@ a {
 
 
 .product-display, .inventory-display, .main-distribution {
-  height: 70vh;
+  height: 72vh;
   background-color: #e4e3e3;
   padding: 0.5rem 1rem;
   border-radius: 8px;
 }
 
 /* scroll */ 
-.table-dashboard, .product-items, .inventory-items, .table-user { 
+.table-dashboard, .product-items, .inventory-items, .table-user, .table-display { 
   /* opsional biar halus */
   scroll-behavior: smooth;
   scrollbar-width: thin;
