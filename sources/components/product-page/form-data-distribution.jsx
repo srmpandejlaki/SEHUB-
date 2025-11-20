@@ -46,24 +46,47 @@ function FormDataDistribution() {
           </div>
         </div>
         <div className="right-side">
-          <div className="double-form">
-            <div className="inputan">
-              <label htmlFor="">Nama Produk</label>
-              <select name="Nama Produk" id="">
-                <option value="Seho Sirop">Seho Sirop</option>
-                <option value="Seho Granule">Seho Granule</option>
-                <option value="Seho Block">Seho Block</option>
-                <option value="Seho Block">+ Produk Baru</option>
-              </select>
+          <div className="the-right-form">
+            <div className="double-form">
+              <div className="inputan">
+                <label htmlFor="">Nama Produk</label>
+                <select name="Nama Produk" id="">
+                  <option value="Seho Sirop">Seho Sirop</option>
+                  <option value="Seho Granule">Seho Granule</option>
+                  <option value="Seho Block">Seho Block</option>
+                  <option value="Seho Block">+ Produk Baru</option>
+                </select>
+              </div>
+              <div className="inputan">
+                <label htmlFor="">Ukuran</label>
+                <input type="text" placeholder="0" />
+              </div>
+            </div>
+            <div className="detail-product">
+              <div className="head-detail">
+                <p>Detail Produk</p>
+              </div>
+              <div className="display-detail">
+                <div className="products">
+                  <div className="product-names">
+                    <p>Seho Granule 250g <br /> <span>25 Desember 2025</span></p>
+                    <p>Seho Granule 250g <br /> <span>4 Januari 2026</span></p>
+                  </div>
+                  <div className="count-product">
+                    <p>3</p>
+                    <p>4</p>
+                  </div>
+                </div>
+                <div className="total">
+                  <p>Total</p>
+                  <p>7</p>
+                </div>
+              </div>
             </div>
             <div className="inputan">
-              <label htmlFor="">Ukuran</label>
-              <input type="text" placeholder="0" />
+              <label htmlFor="">Keterangan</label>
+              <input type="text" placeholder="Ketik sesuatu.." />
             </div>
-          </div>
-          <div className="inputan">
-            <label htmlFor="">Keterangan</label>
-            <input type="text" placeholder="Ketik sesuatu.." />
           </div>
           <div className="button">
             <button className="base-btn green">Simpan</button>
