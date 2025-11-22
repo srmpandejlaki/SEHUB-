@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NavProduct from "../../../components/base/nav-product";
 import SearchFilter from "../../../components/base/search-filter";
 import NavDistribution from "../../../components/base/nav-distribution";
@@ -6,6 +6,26 @@ import TableDistribution from "../../../components/product-page/table-distributi
 import FormDataDistribution from "../../../components/product-page/form-data-distribution";
 
 function DistributionHistoryPage() {
+  const [showNavDis, setNavDis] = useState(true);
+  const [showFormDis, setFormDis] = useState(false);
+
+  // const handleOpenNavDis = () => {
+  //   setNavDis(true);
+  // };
+
+  const handleCloseNavDis = () => {
+    setNavDis(false);
+  };
+
+  const handleOpenFormDis = () => {
+    setFormDis(true);
+  };
+
+  const handleCloseFormDis = () => {
+    setFormDis(false);
+
+  };
+
   return(
     <div className="content distribution-history">
       <NavProduct />
@@ -14,13 +34,17 @@ function DistributionHistoryPage() {
           <p>Riwayat Data Distribusi Produk</p>
           <div className="distribution-display">
             <SearchFilter />
-            <NavDistribution />
+            {showNavDis && (
+              <NavDistribution onClose={handleCloseNavDis} openForm={handleOpenFormDis} />
+            )}
           </div>
         </div>
         <TableDistribution />
-        <div className="form-overlay">
-          <FormDataDistribution /> 
-        </div>
+        {showFormDis && (
+          <div className="form-overlay">
+            <FormDataDistribution onCloseForm={handleCloseFormDis} />
+          </div>
+        )}
       </div>
     </div>
   );

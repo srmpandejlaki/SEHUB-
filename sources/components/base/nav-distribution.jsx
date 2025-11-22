@@ -5,14 +5,14 @@ import IconTambah from "../../assets/icon/mdi_add-bold.svg?react";
 import IconKembali from "../../assets/icon/lets-icons_back.svg?react";
 import IconX from "../../assets/icon/mdi_cancel-bold.svg?react";
 
-function NavDistribution() {
+function NavDistribution({ onClose, openForm }) {
   return(
-    <div className="button">
+    <div className="button nav-distribution">
       <div className="base-btn black">
         <IconLaporan className="icon whiteIcon" />
         <p>Buat Laporan</p>
       </div>
-      <div className="base-btn black">
+      <div className="base-btn black" onClick={openForm}>
         <IconTambah className="icon whiteIcon" />
         <p>Tambah Data</p>
       </div>
@@ -21,7 +21,7 @@ function NavDistribution() {
           <IconKembali className="icon whiteIcon" />Kembali
         </Link>
       </div>
-      <IconX className="blackIcon" />
+      <IconX className="blackIcon close-button" onClick={onClose} />
     </div>
   );
 }

@@ -11,7 +11,7 @@ import IconBotol2 from "../../assets/icon/Frame 27.svg?react";
 import IconKeterangan from "../../assets/icon/fluent_text-description-ltr-20-filled.svg?react";
 import IconDropDown from "../../assets/icon/material-symbols_arrow-drop-down-rounded.svg?react";
 
-function FormDataDistribution() {
+function FormDataDistribution({ onCloseForm }) {
   return(
     <div className="form-data-distribution">
       <div className="form-header">
@@ -19,7 +19,7 @@ function FormDataDistribution() {
           <IconEditProduct className="icon darkGreenIcon" />
           <p>Tambah Produk</p>
         </div>
-        <IconCancel className="icon" />
+        <IconCancel className="icon" onClick={onCloseForm} />
       </div>
       <form action="" className="main-form">
         <div className="left-side">
