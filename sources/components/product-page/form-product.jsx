@@ -2,7 +2,7 @@ import React from "react";
 import IconEditProduct from "../../assets/icon/flowbite_edit-outline.svg?react";
 import IconCancel from "../../assets/icon/material-symbols_cancel.svg?react";
 
-function FormProduct() {
+function FormProduct({ closeFormProduct }) {
   return(
     <div className="form-product">
       <div className="form-header">
@@ -10,7 +10,7 @@ function FormProduct() {
           <IconEditProduct className="icon darkGreenIcon" />
           <p>Tambah Produk</p>
         </div>
-        <IconCancel className="icon" />
+        <IconCancel className="icon" onClick={closeFormProduct} />
       </div>
       <form action="" className="main-form">
         <div className="inputan">
