@@ -4,17 +4,21 @@ import SearchFilter from "../../../components/base/search-filter";
 import NavDistribution from "../../../components/base/nav-distribution";
 import TableDistribution from "../../../components/product-page/table-distribution";
 import FormDataDistribution from "../../../components/product-page/form-data-distribution";
+import IconBar from "../../../assets/icon/material-symbols_menu-rounded.svg?react";
 
 function DistributionHistoryPage() {
-  const [showNavDis, setNavDis] = useState(true);
+  const [showNavDis, setNavDis] = useState(false);
+  const [closeHumberger, setHumberger] = useState(true);
   const [showFormDis, setFormDis] = useState(false);
 
-  // const handleOpenNavDis = () => {
-  //   setNavDis(true);
-  // };
+  const handleOpenNavDis = () => {
+    setNavDis(true);
+    setHumberger(false);
+  };
 
   const handleCloseNavDis = () => {
     setNavDis(false);
+    setHumberger(true);
   };
 
   const handleOpenFormDis = () => {
@@ -35,7 +39,10 @@ function DistributionHistoryPage() {
           <div className="distribution-display">
             <SearchFilter />
             {showNavDis && (
-              <NavDistribution onClose={handleCloseNavDis} openForm={handleOpenFormDis} />
+              <NavDistribution onClose={handleCloseNavDis} openForm={handleOpenFormDis} to="/product/distribution" />
+            )}
+            {closeHumberger && (
+              <IconBar onClick={handleOpenNavDis} />
             )}
           </div>
         </div>
