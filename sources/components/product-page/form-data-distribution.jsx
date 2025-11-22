@@ -91,7 +91,7 @@ function FormDataDistribution() {
                       </tr>
                       <tr className="total">
                         <td className="text-end">Total</td>
-                        <td>7</td>
+                        <td className="counting">7</td>
                       </tr>
                     </tbody>
                   </table>
