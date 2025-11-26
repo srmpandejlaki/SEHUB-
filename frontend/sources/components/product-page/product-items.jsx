@@ -24,10 +24,10 @@ function ProductItems() {
       {product.map((item, index) => (
         <ProductItem 
           key={index}
-          name={item.name}
-          size={item.size}
-          unit={item.unit}
-          img={item.img}/>
+          productName={item.name}
+          productSize={item.size}
+          productUnit={item.unit}
+          productImg={item.img}/>
       ))}
     </div>
   );
