@@ -4,9 +4,8 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: custom.$color-primary;
     font-family: "Poppins", sans-serif;
-    color: custom.$color-secondary;
+    background-color: custom.$color-tertiary;
 }
 
 .main-side {
@@ -38,8 +37,8 @@ header {
 /* logo L' Arbre Seho */
 .logo-larbre {
     @include custom.flex-between;
-    color: custom.$color-primary;
-    background-color: custom.$color-tertiary;
+    color: custom.$color-secondary;
+    background-color: custom.$color-primary;
     padding: 0.5rem 1rem;
 
     h2 {

@@ -7,7 +7,7 @@ function DashboardTable() {
     <div className="table">
       <div className="descTable">
         <div className="title-table">
-          <IconInfoTable className="icon blackIcon" />
+          <IconInfoTable className="icon whiteIcon" />
           <p>Informasi Distribusi Produk</p>
         </div>
         <div className="btn-tbl-detail base-btn">

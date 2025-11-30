@@ -10,6 +10,7 @@ function ProductItems() {
   const handleAddProduct = (newProduct) => {
     setproduct([...product, newProduct]);
   };
+  
   return (
     <div className="product-items">
       <button
@@ -21,6 +22,12 @@ function ProductItems() {
           })
         }
       >Tambah</button>
+      <div className="product">
+      <img src={Sirop1Img} alt="" />
+      <div className="product-desc">
+        <p>Seho Sirop<br/><br/>330ml</p>
+      </div>
+    </div>
       {product.map((item, index) => (
         <ProductItem 
           key={index}

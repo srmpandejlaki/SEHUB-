@@ -59,12 +59,16 @@
   width: 85px;
 
   &:hover {
-    background-color: custom.$dark-green;
+    background-color: custom.$color-primary;
+
+    a {
+      color: custom.$color-secondary;
+    }
   }
 
   a {
     font-size: 0.7rem;
     font-weight: bolder;
-    color: custom.$color-secondary;
+    color: custom.$color-primary;
   }
 }
