@@ -35,7 +35,7 @@ function AsideBar() {
         </div>
       </div>
       <div className="companies-name">
-          <p>PT. Rumah Seho Nusantara</p>
+          <p>Powered by : PT. Rumah Seho Nusantara</p>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@
   gap: 1rem;
 
   a {
-    color: custom.$color-secondary;
+    color: custom.$color-primary;
     height: 30px;
     padding: 0.5rem;
     @include custom.flex-align-center;
@@ -23,8 +23,8 @@
 
     &:hover {
       cursor: pointer;
-      color: custom.$color-primary;
-      background-color: custom.$color-secondary;
+      color: custom.$color-secondary;
+      background-color: custom.$color-primary;
       border-radius: 4px;
 
       .icon {

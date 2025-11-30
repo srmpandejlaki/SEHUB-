@@ -2,6 +2,8 @@
 
 .user-display {
   padding: 1rem;
+  background-color: custom.$color-primary;
+  border-radius: 0 0 4px 4px;
 }
 
 .header-user-setting {
@@ -47,6 +49,10 @@
   @include custom.flex-align-center;
   gap: 1rem;
   padding-left: 1rem;
+
+   p {
+     color: custom.$color-primary;
+   }
 }
 
 .languages-setting {
@@ -59,7 +65,7 @@
 }
 
 .languages-setting, .clear-data-setting, .user-setting {
-  background-color: #e4e3e3;
+  background-color: custom.$color-primary;
   border-radius: 8px;
 }
 

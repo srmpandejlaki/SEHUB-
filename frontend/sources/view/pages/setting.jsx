@@ -28,7 +28,7 @@ function SettingPage() {
       </div>
       <div className="other-setting">
         <div className="other-setting-header">
-          <IconOtherSetting className="icon greenIcon" />
+          <IconOtherSetting className="icon whiteIcon" />
           <p>Pengaturan Lainnya</p>
         </div>
         <LanguageSetting />
