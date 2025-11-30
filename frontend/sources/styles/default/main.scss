@@ -154,7 +154,7 @@ a {
 
 .product-display, .inventory-display, .main-distribution {
   height: max-content;
-  background-color: #e4e3e3;
+  background-color: custom.$color-primary;
   padding: 0.5rem 1rem;
   border-radius: 8px;
 }
