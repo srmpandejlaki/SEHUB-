@@ -16,23 +16,28 @@ async function createTables() {
   try {
     console.log("🔍 Mengecek dan membuat tabel jika belum ada...");
 
-    // Contoh tabel Users
+    // Tabel Users
     await pool.query(`
       CREATE TABLE IF NOT EXISTS users (
-        id SERIAL PRIMARY KEY,
+        id_user SERIAL PRIMARY KEY,
         name VARCHAR(100) NOT NULL,
         email VARCHAR(100) UNIQUE NOT NULL,
+        jabatan VARCHAR(50) NOT NULL,
+        status VARCHAR(15) NOT NULL,
+        password VARCHAR(255) NOT NULL,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       );
     `);
 
-    // Contoh tabel Posts
+    // Tabel Product
     await pool.query(`
-      CREATE TABLE IF NOT EXISTS posts (
-        id SERIAL PRIMARY KEY,
-        user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
-        title VARCHAR(200) NOT NULL,
-        content TEXT NOT NULL,
+      CREATE TABLE IF NOT EXISTS product (
+        id_product SERIAL PRIMARY KEY,
+        nama_product VARCHAR(100) NOT NULL,
+        ukuran_product VARCHAR(20) NOT NULL,
+        ukuran_satuan VARCHAR(20) NOT NULL,
+        kemasan_product VARCHAR(20) NOT NULL,
+        img_product VARCHAR(255) NOT NULL,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       );
     `);

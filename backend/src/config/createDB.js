@@ -1,19 +1,16 @@
-import pkg from 'pg';
-const { Pool } = pkg;
-import dotenv from 'dotenv';
-
-dotenv.config();
+const { Pool } = require("pg");
+require("dotenv").config();
 
 async function initDatabase() {
-  const dbName = "sehub_db";
+  const dbName = "tess_db";
 
   // Koneksi ke database default (postgres)
   const pool = new Pool({
     host: process.env.DB_HOST,
-    port: process.env.DB_PORT,
+    port: Number(process.env.DB_PORT),
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
+    database: "postgres",
   });
 
   try {
@@ -27,7 +24,7 @@ async function initDatabase() {
       console.log(`Database "${dbName}" belum ada. Membuat...`);
 
       // Membuat database baru
-      await pool.query(`CREATE DATABASE ${dbName}`);
+      await pool.query(`CREATE DATABASE "${dbName}"`);
       console.log("Database berhasil dibuat!");
     } else {
       console.log(`Database "${dbName}" sudah ada.`);
