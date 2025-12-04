@@ -1,10 +1,10 @@
-const UserService = require("../services/ProductService");
+import ProductService from "../services/ProductService.js";
 
 const ProductController = {
   getProducts: async (req, res) => {
     try {
-      const users = await UserService.getProducts();
-      res.json({ success: true, data: users });
+      const products = await ProductService.getProducts();
+      res.json({ success: true, data: products });
     } catch (error) {
       res.status(500).json({ success: false, error: error.message });
     }
@@ -13,7 +13,7 @@ const ProductController = {
   createProduct: async (req, res) => {
     try {
       const { nama_product, ukuran_product, ukuran_satuan, kemasan_product, img_product } = req.body;
-      const newProduct = await UserService.createProduct(nama_product, ukuran_product, ukuran_satuan, kemasan_product, img_product);
+      const newProduct = await ProductService.createProduct(nama_product, ukuran_product, ukuran_satuan, kemasan_product, img_product);
       res.json({ success: true, message: "Product created", data: newProduct });
     } catch (error) {
       res.status(500).json({ success: false, error: error.message });
@@ -21,4 +21,4 @@ const ProductController = {
   },
 };
 
-module.exports = ProductController;
+export default ProductController;

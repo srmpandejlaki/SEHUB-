@@ -1,13 +1,13 @@
-const UserModel = require("../models/ProductModel");
+import ProductModel from "../models/ProductModel.js";
 
 const ProductService = {
   getProducts: async () => {
-    return await UserModel.getAll();
+    return await ProductModel.getAll();
   },
 
   createProduct: async (nama_product, ukuran_product, ukuran_satuan, kemasan_product, img_product) => {
-    return await UserModel.create(nama_product, ukuran_product, ukuran_satuan, kemasan_product, img_product);
+    return await ProductModel.create(nama_product, ukuran_product, ukuran_satuan, kemasan_product, img_product);
   },
 };
 
-module.exports = ProductService;
+export default ProductService;

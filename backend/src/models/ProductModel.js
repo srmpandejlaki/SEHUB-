@@ -1,8 +1,8 @@
-const db = require("../config/db");
+import db from "../config/db.js";
 
 const ProductModel = {
   getAll: async () => {
-    const result = await db.query("SELECT * FROM product ORDER BY id DESC");
+    const result = await db.query("SELECT * FROM product ORDER BY id_product DESC");
     return result.rows;
   },
 
@@ -15,4 +15,4 @@ const ProductModel = {
   },
 };
 
-module.exports = ProductModel;
+export default ProductModel;
